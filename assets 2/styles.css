@@ -1,8 +1,0 @@
-/* Akropolis – centrale styling */
-.logo{
-  width:220px;
-  height:80px;
-}
-.logo img{
-  object-fit:contain;
-}
