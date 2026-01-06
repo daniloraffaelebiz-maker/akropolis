@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Grieks Restaurant Akropolis in Schagen. Reserveer, bekijk de dinerkaart en neem contact op."/>
+  <title>Reserveren • Akropolis Schagen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Tenor+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<a class="skip" href="#content">Naar inhoud</a>
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <div class="logo" title="Akropolis">
+          <img src="assets/logo-akropolis.png" alt="Akropolis Grieks Restaurant logo">
+        </div>
+        
+      </a>
+
+      <button class="burger" data-burger aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" data-menu>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reserveren.html" aria-current="page">Reserveren</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn ghost" href="#" aria-disabled="true" title="Telefoonnummer volgt">Binnenkort</a>
+        <a class="btn primary" href="reserveren.html">Reserveren</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="content">
+<section class="pagehead">
+  <div class="container">
+    <div class="breadcrumb">Home / Reserveren</div>
+    <h1>Reserveren</h1>
+    <p class="lede">Reserveer via het formulier, bel ons (komt eraan), of gebruik een externe reserveringslink.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="panel">
+        <h2>Reserveringsformulier</h2>
+        <p class="note">Klaar voor koppeling (bijv. Formspree). Zet straks je endpoint in de <code>action</code>.</p>
+
+        <form class="form" data-reserve method="post" action="#">
+          <div class="form-row">
+            <div class="field">
+              <label for="naam">Naam*</label>
+              <input id="naam" name="naam" autocomplete="name" required/>
+            </div>
+            <div class="field">
+              <label for="telefoon">Telefoon*</label>
+              <input id="telefoon" name="telefoon" autocomplete="tel" required/>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="datum">Datum*</label>
+              <input id="datum" name="datum" type="date" required/>
+            </div>
+            <div class="field">
+              <label for="tijd">Tijd*</label>
+              <input id="tijd" name="tijd" type="time" required/>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="personen">Aantal personen*</label>
+              <select id="personen" name="personen" required>
+                <option value="">Kies…</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email"/>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="opmerking">Opmerking (allergenen / dieet / kinderstoel etc.)</label>
+            <textarea id="opmerking" name="opmerking" placeholder="Bijv. glutenvrij, vegetarisch, allergie noten…"></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Verstuur aanvraag</button>
+          <p class="note">* Verplichte velden.</p>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Andere manieren</h2>
+
+        <div class="alert" style="margin-bottom:12px;">
+          <strong>Telefoonnummer volgt</strong><br/>
+          Zodra je het nummer hebt, maak ik de belknop overal werkend als <code>tel:</code> link.
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn" href="#" aria-disabled="true">Bel (komt eraan)</a>
+          <a class="btn" href="#" aria-disabled="true">Reserveer extern (link volgt)</a>
+        </div>
+
+        <div class="hr"></div>
+
+        <h2 style="margin-top:0">Nog nodig</h2>
+        <ul>
+          <li>Telefoonnummer</li>
+          <li>Openingstijden</li>
+          <li>Externe reserverings-URL (TheFork / Google Reserve / eigen systeem)</li>
+        </ul>
+
+        <p class="note">Wil je ook een WhatsApp-knop? Kan ik erbij zetten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p><strong style="font-family: 'Libre Baskerville', serif; letter-spacing:.06em; text-transform:uppercase;">Akropolis</strong> — Molenstraat 21, Schagen.</p>
+        <p class="muted" style="margin-top:6px;">Telefoonnummer en openingstijden worden nog toegevoegd.</p>
+        <div class="footer-links" style="margin-top:10px;">
+          <a href="menu.html">Menu</a>
+          <a href="reserveren.html">Reserveren</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p><small class="muted">© <span id="y"></span> Akropolis Schagen</small></p>
+        <p style="margin-top:8px;"><small class="muted">Zwart #000000 • Goud #e1a730 • Libre Baskerville & Tenor Sans</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
